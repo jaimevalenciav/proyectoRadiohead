@@ -63,7 +63,7 @@ nav{
     text-align: center;
     padding-top: 10px;
     box-sizing: border-box;
-    
+    z-index: 2;
 }
 
 nav ul li {
@@ -346,7 +346,7 @@ div p{
   .card-text{
     height:80px;  
   }
-  
+   
   .card::before, .card::after {
     position: absolute;
     top: 0;
