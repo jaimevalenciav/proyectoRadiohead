@@ -4,32 +4,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radiohead</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <title>Radiohead - Media</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/e504f1f9a5.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
-    <header>
-        <section id="barra-menu">
-            <ul>
-                <a href="index.html">Home</a>  
-                <a href="banda.html">Banda</a>  
-                <a href="media.html">Media</a>  
-                <a href="discografia.html">Discografía</a>  
-                <a href="tour.html">Tour</a> 
-            </ul>
-        </section>
+<body id="fondoMedia">
+    <header>        
+        <div class="ancho">
+            <nav class="navbar navbar-expand-md navbar-dark bg-black">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/logo.png" alt="" srcset="" class="imgLogo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar navbar-collapse" id="menu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="banda.html">Banda</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="../pages/discografia.html">Discografía</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="../pages/media.html">Media</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="../pages/tour.html">Tour</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    
-    <section>
-        <h1>Media</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab vitae animi impedit dicta molestiae, sunt tempora vero consequuntur inventore ratione dolorem possimus provident voluptas amet quos tempore nesciunt suscipit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab vitae animi impedit dicta molestiae, sunt tempora vero consequuntur inventore ratione dolorem possimus provident voluptas amet quos tempore nesciunt suscipit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab vitae animi impedit dicta molestiae, sunt tempora vero consequuntur inventore ratione dolorem possimus provident voluptas amet quos tempore nesciunt suscipit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab vitae animi impedit dicta molestiae, sunt tempora vero consequuntur inventore ratione dolorem possimus provident voluptas amet quos tempore nesciunt suscipit.</p>
+
+    <section id="media" class="pt-md-5">
+        <h2 class="text-center my-2 tituloMedia">Recursos Media</h2>
+        <div class="container">
+            <div class="row row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <iframe src="https://www.youtube.com/embed/XFkzRNyygfk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Creep</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../images/thebends.jpeg" class="card-img-top" alt="disco pablo honey">
+                        <div class="card-body">
+                            <h5 class="card-title">The Bends</h5>
+                            <p class="card-text">
+                                1995
+                            </p>
+                            <a class="btn btn-secondary" role="button" href="https://open.spotify.com/album/35UJLpClj5EDrhpNIi4DFg?si=IqGDRNIYRS2j9TlBAMdumw" target="_blank">Spotify</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../images/kid-a.jpeg" class="card-img-top" alt="disco pablo honey">
+                        <div class="card-body">
+                            <h5 class="card-title">Kid A</h5>
+                            <p class="card-text">
+                                2000
+                            </p>
+                            <a class="btn btn-secondary" role="button" href="https://open.spotify.com/album/6GjwtEZcfenmOf6l18N7T7?si=YtjS7z3FT_KuN_LdiH59LQ" target="_blank">Spotify</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../images/amnesiac.jpeg" class="card-img-top" alt="disco pablo honey">
+                        <div class="card-body">
+                            <h5 class="card-title">Amnesiac</h5>
+                            <p class="card-text">
+                                2001
+                            </p>
+                            <a class="btn btn-secondary" role="button" href="https://open.spotify.com/album/1HrMmB5useeZ0F5lHrMvl0?si=baiLhAl6R2WjAUEkyhhrVg" target="_blank">Spotify</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../images//hailtothehief.jpeg" class="card-img-top" alt="disco pablo honey">
+                        <div class="card-body">
+                            <h5 class="card-title">Hail to the Thief</h5>
+                            <p class="card-text">
+                                2003
+                            </p>
+                            <a class="btn btn-secondary" role="button" href="https://open.spotify.com/album/5mzoI3VH0ZWk1pLFR6RoYy?si=EV6yIBKYQyOqe4u2pGYVYQ" target="_blank">Spotify</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col">
+                    <div class="card ">
+                        <img src="../images/in-rainbows.jpeg" class="card-img-top" alt="disco in rainbows">
+                        <div class="card-body">
+                            <h5 class="card-title">In Rainbows</h5>
+                            <p class="card-text">
+                                2007
+                            </p>
+                            <a class="btn btn-secondary" role="button" href="https://open.spotify.com/album/5vkqYmiPBYLaalcmjujWxK?si=gGnLFOdxQIWicFxgbVO8Mw" target="_blank">Spotify</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../images/the-king-of-limbs.jpeg" class="card-img-top" alt="disco the king of limbs">
+                        <div class="card-body">
+                            <h5 class="card-title">The King on Limbs</h5>
+                            <p class="card-text">
+                                2011
+                            </p>
+                            <a class="btn btn-secondary" role="button" href="https://open.spotify.com/album/3P17levwUPzmFfLYdAK3A7?si=iu9iCokORlysoIOhRzDdiA" target="_blank">Spotify</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../images/amoonshapedpool.jpeg" class="card-img-top" alt="disco a moon shaped pool">
+                        <div class="card-body">
+                            <h5 class="card-title">A Moon Shaped Pool</h5>
+                            <p class="card-text">
+                                2016
+                            </p>
+                            <a class="btn btn-secondary" role="button" href="https://open.spotify.com/album/2ix8vWvvSp2Yo7rKMiWpkg?si=cohPzaTIQHCSwiD4-Np9IA" target="_blank">Spotify</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../images/oknotok.png" class="card-img-top" alt="disco oknotok">
+                        <div class="card-body">
+                            <h5 class="card-title">Ok Computer OKNOTOK</h5>
+                            <p class="card-text">
+                                2017
+                            </p>
+                            <a class="btn btn-secondary" role="button" href="https://open.spotify.com/album/0tzfI6NFJqcJkWb23R3lRZ?si=YPZ-zlaFTkmVgntuAVwAsA" target="_blank">Spotify</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../images/kidamnesia.png" class="card-img-top" alt="disco kid a mnesia">
+                        <div class="card-body">
+                            <h5 class="card-title">Kid A Mnesia</h5>
+                            <p class="card-text">
+                                2017
+                            </p>
+                            <a class="btn btn-secondary" role="button" href="https://open.spotify.com/album/0SvYW67Kes52rOZziDO9uC?si=5VtqarFvQgOyurmgJuQ_rA" target="_blank">Spotify</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
+
     <footer class="pie-pagina">
         <div class="group-1">        
             <div class="caja">
@@ -39,11 +172,16 @@
                     </a>
                 </figure>
             </div>
-            <div class="caja">
-                <h2>RADIOHEAD</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
+            <div class="container">
+                <footer class="py-3 my4">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+                        <li class="nav-item"><a href="../pages/banda.html" class="nav-link px-2 text-muted">Banda</a></li>
+                        <li class="nav-item"><a href="../pages/discografia.html" class="nav-link px-2 text-muted">Discografia</a></li>
+                        <li class="nav-item"><a href="../pages/media.html" class="nav-link px-2 text-muted">Media</a></li>
+                        <li class="nav-item"><a href="../pages/tour.html" class="nav-link px-2 text-muted">Tour</a></li>
+                    </ul>
+                </footer>
             </div>
             <div class="caja">
                 <h2>REDES</h2>
@@ -55,12 +193,7 @@
                 </div>
             </div>
         </div>
-        <div class="group-2">
-            <small>&copy; 2023 <b>Jaime Valencia</b> - Sin derechos reservados </small>
-
-        </div>
+        
     </footer>
-
-
 </body>
 </html>
