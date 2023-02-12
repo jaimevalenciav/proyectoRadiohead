@@ -1,4 +1,6 @@
 @import "media";
+@import "menunav";
+@import "piepagina";
 
 
 *{
@@ -77,39 +79,6 @@ header{
     .p .a .img{
         width: 30%;
         height: 40%;
-    }
-}
-
-nav{
-    width: 100%;
-    height: 70px;
-    background-color: black;
-    float: left;
-    text-align: center;
-    padding-top: 10px;
-    box-sizing: border-box;
-    z-index: 2;
-    ul li {
-        display: inline;
-        color:#fff;
-        a{
-            color: white;
-            font-size: 15;
-            text-decoration: none;
-            text-transform: uppercase;
-            padding-left: 15px;
-            padding-right: 15px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-align: center;
-            &:hover{
-                color: black;
-                background-color: rgb(175, 9, 9);
-                /*width: 300px;*/
-                height: 30px ;
-                transition: all .7s;
-            }
-        }
     }
 }
 
@@ -230,7 +199,7 @@ div {
 }
 
 #fondoDiscografia{
-    background-image: url('/images/fondo5.jpg');
+    background-image: url('./images/fondo5.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: black;
@@ -254,73 +223,6 @@ div {
     }
 }
 
-.pie-pagina{
-    width: 100%;
-    background-color: rgb(23, 22, 22);
-    position:fixed;
-    bottom: 0;
-    border-top-style: solid;
-    border-top-width: 3px;
-    border-top-color: rgb(148, 5, 5);
-    .group-1{
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
-        padding: 5px 0px;
-        .caja{
-            figure{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            img{
-                width: 60px;  
-                height: 60px; 
-            }
-            h2{
-                color: #000;
-                margin-bottom: 5px;
-                font-size: 12px;
-            }
-            p{
-                color: #000;
-                margin-bottom: 10px;
-                font-size: 12px;
-            }
-        }
-        .social{
-            a{
-                display: inline-block;
-                text-decoration: none;
-                width: 45px;
-                height: 45px;
-                line-height: 45px;
-                color: #fff;
-                margin-right: 8px;
-                background-color: black;
-                text-align: center;
-                transition: all 200ms ease;
-                &:hover{
-                    color: rgb(148, 5, 5)
-                }
-            }
-        }
-    }
-    .group-2{
-        background-color: rgb(23,22,22);
-        padding: 5px 3px;
-        text-align: center;
-        color: #000;
-        small{
-            font-size: 13px;
-        }
-    }
-}
 
 .tituloDiscografia{
     color: #fff;
