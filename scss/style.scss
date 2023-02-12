@@ -1,7 +1,8 @@
 @import "media";
 @import "menunav";
 @import "piepagina";
-
+@import "discografia";
+@import "banda";
 
 *{
     padding: 0;
@@ -106,165 +107,8 @@ div {
     min-height: 100%;
 }
 
-.home {
-    .carousel-item{
-        min-height: 75vh;
-        position: relative;
-        z-index: 1;
-        &:before{
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            // background-color: rgb(0, 0, 0, 0.3);
-            z-index: -1;
-        }
-        .container{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-        h2{
-            font-size: 60px;
-            color: #ffffff;
-            margin: 0 0 10px;
-            opacity: 0;
-        }
-        &.active h2{
-            animation: fadeIzq 0.4s ease forwards;
-        }
-        h5{
-            font-size: 30px;
-            color: #bbbbbb;
-            margin: 0 0 10px;
-            opacity: 0;
-        }
-        &.active h5{
-            animation: fadeDer 0.4s ease forwards;
-        }
-    }
-}
 
 
-@keyframes fadeIzq {
-    0%{
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-@keyframes fadeDer {
-    0%{
-        opacity: 0;
-        transform: translateX(30px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.fondoCarousel{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.bandaThom{
-    background-image: url('../images/tyorke.jpeg');
-}
-
-.bandaEd{
-    background-image: url('../images/eobrian.jpeg');
-}
-
-.bandaPhill{
-    background-image: url('../images/pselway.jpeg');
-}
-
-.bandaJhonny{
-    background-image: url('../images/jgreendwood.jpeg');
-}
-
-.bandaCollin{
-    background-image: url('../images/cgreenwood.jpeg');
-}
-
-#fondoDiscografia{
-    background-image: url('./images/fondo5.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    color: black;
-}
-
-#album{
-    width: 70%;
-    height: 430px;
-    background-color: rgba(109, 105, 105, 0.639) ;
-    position: relative;
-    margin-top: 4vw;
-    margin-left: 10vw;
-    top: 20%;
-    /* left: 50%; */
-    border-radius: 5px; 
-    display: flex;
-    p iframe{
-        border-radius:12px;
-        width: 100% ;
-        height: 352px;  
-    }
-}
-
-
-.tituloDiscografia{
-    color: #fff;
-}
-
-.card-title i:hover{
-    transform: scale(1.25) rotate(100deg); 
-    color:#18d4ca;
-    
-}
-
-.card-text{
-    height:80px;  
-}
-
-.card{
-    &:hover{
-        transform: scale(1.05);
-        box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
-    }
-    &::before, &::after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transform: scale3d(0, 0, 1);
-        transition: transform .3s ease-out 0s;
-        background: rgba(255, 255, 255, 0.1);
-        content: '';
-        pointer-events: none;
-    }
-    &::before {
-        transform-origin: left top;
-    }
-    &::after {
-        transform-origin: right bottom;
-    }
-    &:hover::before, &:hover::after, &:focus::before, &:focus::after {
-        transform: scale3d(1, 1, 1);
-    }
-}
 
 
 

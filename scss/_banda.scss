@@ -1,0 +1,92 @@
+
+.home {
+    .carousel-item{
+        min-height: 75vh;
+        position: relative;
+        z-index: 1;
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            // background-color: rgb(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+        .container{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        h2{
+            font-size: 60px;
+            color: #ffffff;
+            margin: 0 0 10px;
+            opacity: 0;
+        }
+        &.active h2{
+            animation: fadeIzq 0.4s ease forwards;
+        }
+        h5{
+            font-size: 30px;
+            color: #bbbbbb;
+            margin: 0 0 10px;
+            opacity: 0;
+        }
+        &.active h5{
+            animation: fadeDer 0.4s ease forwards;
+        }
+    }
+}
+
+
+@keyframes fadeIzq {
+    0%{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeDer {
+    0%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.fondoCarousel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bandaThom{
+    background-image: url('../images/tyorke.jpeg');
+}
+
+.bandaEd{
+    background-image: url('../images/eobrian.jpeg');
+}
+
+.bandaPhill{
+    background-image: url('../images/pselway.jpeg');
+}
+
+.bandaJhonny{
+    background-image: url('../images/jgreendwood.jpeg');
+}
+
+.bandaCollin{
+    background-image: url('../images/cgreenwood.jpeg');
+}
