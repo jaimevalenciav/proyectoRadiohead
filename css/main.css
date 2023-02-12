@@ -1,5 +1,5 @@
 #fondoMedia {
-  background-image: url("../images/fondo4.jpg");
+  background-image: url("../images/fondo2.jpg");
   background-size: cover;
   background-attachment: fixed;
   color: black; }
@@ -215,6 +215,20 @@ nav {
 
 .bandaCollin {
   background-image: url("../images/cgreenwood.jpeg"); }
+
+table {
+  margin-top: 50px; }
+
+.encabezadoTour {
+  margin-top: 50px;
+  text-align: justify;
+  color: #fff; }
+
+#fondoTour {
+  background-image: url("../images/concerts.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: black; }
 
 * {
   padding: 0;

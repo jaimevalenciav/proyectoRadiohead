@@ -4,33 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radiohead</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <title>Radiohead - Media</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/e504f1f9a5.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
-    <header>
-        <section id="barra-menu">
-            <ul>
-                                
-                <a href="index.html">Home</a>  
-                <a href="banda.html">Banda</a>  
-                <a href="media.html">Media</a>  
-                <a href="discografia.html">Discografía</a>  
-                <a href="tour.html">Tour</a>  
-            </ul>
-        </section>
+<div id="fondoTour">
+    <header>        
+        <div class="ancho">
+            <nav class="navbar navbar-expand-md navbar-dark bg-black">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/logo.png" alt="" srcset="" class="imgLogo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar navbar-collapse" id="menu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="banda.html">Banda</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="../pages/discografia.html">Discografía</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="../pages/media.html">Media</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="../pages/tour.html">Tour</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-   
-    <section>
-        <h1>Tour</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit enim possimus expedita, esse porro fuga modi praesentium sequi reprehenderit maiores? Architecto explicabo iusto cupiditate ullam autem aspernatur velit laborum harum?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit enim possimus expedita, esse porro fuga modi praesentium sequi reprehenderit maiores? Architecto explicabo iusto cupiditate ullam autem aspernatur velit laborum harum?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit enim possimus expedita, esse porro fuga modi praesentium sequi reprehenderit maiores? Architecto explicabo iusto cupiditate ullam autem aspernatur velit laborum harum?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit enim possimus expedita, esse porro fuga modi praesentium sequi reprehenderit maiores? Architecto explicabo iusto cupiditate ullam autem aspernatur velit laborum harum?</p>
-    </section>
+    <div class="encabezadoTour container">
+        <h5>Este es el listado de presentaciones confirmadas de la banda. Adquiere tus entradas antes que se agoten.</h5>
+    </div>
+    <div class="container table-responsive">
+        <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Fecha</th>
+                <th scope="col">País - Ciudad</th>
+                <th scope="col">Lugar</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">12-Mar-2023</th>
+                <td>Londres, Inglaterra</td>
+                <td>Wembley Stadium</td>
+                <td><button type="button" class="btn btn-secondary">Entrada</button></td>
+              </tr>
+              <tr>
+                <th scope="row">22-Mar-2023</th>
+                <td>Manchester, Inglaterra</td>
+                <td>Manchester City Stadium</td>
+                <td><button type="button" class="btn btn-secondary">Entrada</button></td>
+              </tr>
+              <tr>
+                <th scope="row">18-Abr-2023</th>
+                <td>Saint-Denis, Francia</td>
+                <td>Stade de France</td>
+                <td><button type="button" class="btn btn-secondary">Entrada</button></td>
+              </tr>
+              <tr>
+                <th scope="row">27-Abr-2023</th>
+                <td>Marsella, Francia</td>
+                <td>Stade Vélodrome</td>
+                <td><button type="button" class="btn btn-secondary">Entrada</button></td>
+              </tr>
+              <tr>
+                <th scope="row">12-May-2023</th>
+                <td>Bruselas, Bélgica</td>
+                <td>Estadio Rey Balduino</td>
+                <td><button type="button" class="btn btn-secondary">Entrada</button></td>
+              </tr>
+              <tr>
+                <th scope="row">18-May-2023</th>
+                <td>Munich, Alemania</td>
+                <td>Allianz Arena</td>
+                <td><button type="button" class="btn btn-secondary">Entrada</button></td>
+              </tr>
+            </tbody>
+          </table>
 
+    </div>
     <footer class="pie-pagina">
         <div class="group-1">        
             <div class="caja">
@@ -40,11 +99,16 @@
                     </a>
                 </figure>
             </div>
-            <div class="caja">
-                <h2>RADIOHEAD</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
+            <div class="container">
+                <footer class="py-3 my4">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+                        <li class="nav-item"><a href="../pages/banda.html" class="nav-link px-2 text-muted">Banda</a></li>
+                        <li class="nav-item"><a href="../pages/discografia.html" class="nav-link px-2 text-muted">Discografia</a></li>
+                        <li class="nav-item"><a href="../pages/media.html" class="nav-link px-2 text-muted">Media</a></li>
+                        <li class="nav-item"><a href="../pages/tour.html" class="nav-link px-2 text-muted">Tour</a></li>
+                    </ul>
+                </footer>
             </div>
             <div class="caja">
                 <h2>REDES</h2>
@@ -56,11 +120,7 @@
                 </div>
             </div>
         </div>
-        <div class="group-2">
-            <small>&copy; 2023 <b>Jaime Valencia</b> - Sin derechos reservados </small>
-
-        </div>
+        
     </footer>
-
 </body>
 </html>
