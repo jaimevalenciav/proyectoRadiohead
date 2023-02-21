@@ -21,7 +21,8 @@ nav {
   z-index: 2; }
   nav ul li {
     display: inline;
-    color: #fff; }
+    color: #fff;
+    background: black; }
     nav ul li a {
       color: white;
       font-size: 15;
@@ -265,7 +266,7 @@ header {
   color: #fff;
   border-color: rgba(49, 47, 47, 0.639); }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   #videoFondo {
     display: none; }
   body {
