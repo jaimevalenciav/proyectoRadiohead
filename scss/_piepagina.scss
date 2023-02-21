@@ -1,8 +1,10 @@
+.posicion-absoluta{
+    position: absolute;
+}
 
 .pie-pagina{
     width: 100%;
     background-color: rgb(23, 22, 22);
-    position: fixed;
     bottom: 0px;
     border-top-style: solid;
     border-top-width: 3px;
@@ -28,7 +30,7 @@
                 height: 60px; 
             }
             h2{
-                color: #000;
+                color: rgb(148, 5, 5);
                 margin-bottom: 5px;
                 font-size: 12px;
             }

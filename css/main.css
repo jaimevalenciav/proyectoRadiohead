@@ -7,6 +7,9 @@
 .tituloMedia {
   color: white; }
 
+div {
+  text-align: center; }
+
 nav {
   width: 100%;
   height: 70px;
@@ -36,10 +39,12 @@ nav {
         height: 30px;
         transition: all .7s; }
 
+.posicion-absoluta {
+  position: absolute; }
+
 .pie-pagina {
   width: 100%;
   background-color: #171616;
-  position: fixed;
   bottom: 0px;
   border-top-style: solid;
   border-top-width: 3px;
@@ -62,7 +67,7 @@ nav {
       width: 60px;
       height: 60px; }
     .pie-pagina .group-1 .caja h2 {
-      color: #000;
+      color: #940505;
       margin-bottom: 5px;
       font-size: 12px; }
     .pie-pagina .group-1 .caja p {
@@ -92,7 +97,7 @@ nav {
 
 #album {
   width: 70%;
-  height: 430px;
+  height: 400px;
   background-color: rgba(109, 105, 105, 0.639);
   position: relative;
   margin-top: 4vw;
@@ -104,7 +109,7 @@ nav {
   #album p iframe {
     border-radius: 12px;
     width: 100%;
-    height: 352px; }
+    height: 300px; }
 
 #fondoDiscografia {
   background-image: url("../images/fondo5.jpg");
