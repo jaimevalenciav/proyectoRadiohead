@@ -264,7 +264,7 @@ header {
   color: #fff;
   border-color: rgba(49, 47, 47, 0.639); }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   #videoFondo {
     display: none; }
   body {
